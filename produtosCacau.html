@@ -52,6 +52,27 @@
       .pp p {
         font-size: clamp(2.5rem, 2rem + 3vw, 4rem);
       }
+      /* header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+      } */
+      .imgH {
+        width: 250px;
+        border-radius: 0 50px 0 50px;
+        /* height: 150px;
+        background-image: url(img/parallax.jpg);
+        background-size: cover; */
+      }
+      .pModal::after {
+        content: '';
+        width: 100px;
+        height: 1px;
+        display: block;
+        margin: 0 auto;
+        background-color: royalblue;
+      }
     </style>
     <title>Document</title>
   </head>
@@ -119,9 +140,33 @@
         </div>
       </section>
       <section class="container my-3">
+        <div class="container">
+          <div class="row">
+            <div
+              class="
+                col-lg-4 col-md-6 col-sm-12
+                mt-3
+                d-flex
+                justify-content-center
+              "
+            >
+              <img class="imgH" src="img/parallax.jpg" />
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12 mt-3">
+              <p class="mt-3">
+                Temos o prazer de recebê-lo em nosso reino do chocolate e
+                esperamos sinceramente que fique satisfeito durante sua visita.
+                Nossa empresa se preocupa com tradições e qualidade premium.
+                Clientes sorridentes e uma ampla variedade de produtos premium
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="text">
           <h1>Trufas 50% Cacau</h1>
         </div>
+
         <div class="row">
           <div
             class="
@@ -131,11 +176,37 @@
               align-items-center
             "
           >
+            <!-- Modal -->
+            <div class="modal fade" id="chocModal">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img src="img/trufa (1).jpg" />
+                      </div>
+                      <div class="col-sm-12 col-lg-3">
+                        <p class="pModal">Trufa</p>
+
+                        <p class="pModal">Delecia de trufa</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="card">
               <img src="img/trufa (1).jpg" />
             </div>
-            <div class="card-body">
-              <p class="card-text">Trufas belgas</p>
+            <div class="card-body mx-auto">
+              <p
+                class="card-text"
+                data-bs-toggle="modal"
+                data-bs-target="#chocModal"
+              >
+                Trufas belgas
+              </p>
             </div>
           </div>
           <div
