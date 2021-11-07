@@ -47,3 +47,31 @@ html {
 .imgModal {
   width: 100%;
 }
+<<<<<<< HEAD
+.detalhes{
+  text-decoration: underline;
+
+}
+.detalhes:hover{
+  cursor:pointer;
+=======
+
+.arrawUp {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 10px;
+  bottom: 25px;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.arrawUp:hover {
+  right: 0;
+  bottom: 0;
+  transition: all 0.5s;
+  background-color: blueviolet;
+  border-radius: 140px 0 0 0;
+  padding: 5px;
+  text-decoration: underline;
+>>>>>>> 95300f17052e24803bf4e9ea38c7a4d7ad99addb
+}
