@@ -25,6 +25,7 @@
         height: 14rem;
         overflow: hidden;
         border-radius: 20px;
+        cursor: pointer;
       }
       .text {
         text-align: center;
@@ -72,6 +73,10 @@
         display: block;
         margin: 0 auto;
         background-color: royalblue;
+      }
+      .imgLogos {
+        width: 70px;
+        /* height: 30px; */
       }
     </style>
     <title>Document</title>
@@ -131,6 +136,7 @@
         </section>
       </nav>
     </header>
+
     <main>
       <section class="promocaoImg">
         <div class="imgPromocao"></div>
@@ -187,8 +193,23 @@
                       </div>
                       <div class="col-sm-12 col-lg-3">
                         <p class="pModal">Trufa</p>
-
                         <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -196,7 +217,11 @@
               </div>
             </div>
 
-            <div class="card">
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal"
+            >
               <img src="img/trufa (1).jpg" />
             </div>
             <div class="card-body mx-auto">
@@ -386,6 +411,19 @@
             <div class="card-body mx-auto">
               <p class="card-text">Trufas belgas</p>
             </div>
+          </div>
+        </div>
+
+        <div class="row text-center m-5">
+          <div class="col">
+            <h2>Marcas utilizadas na produção</h2>
+          </div>
+        </div>
+        <div class="row text-center mb-5">
+          <div class="col align-items-center">
+            <img class="imgLogos" src="img/logo-callebaut.png" />
+            <img class="imgLogos" src="img/logo-nestle-moca.png" />
+            <img class="imgLogos" src="img/logo-sicao-site-300x120.png" />
           </div>
         </div>
       </section>
