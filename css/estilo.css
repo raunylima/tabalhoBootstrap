@@ -23,7 +23,7 @@ html {
 }
 .imgPromocao {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1600px;
   height: 300px;
   background-image: url(../img/banner_1013x300px_02.png);
   background-repeat: no-repeat;
@@ -47,14 +47,6 @@ html {
 .imgModal {
   width: 100%;
 }
-<<<<<<< HEAD
-.detalhes{
-  text-decoration: underline;
-
-}
-.detalhes:hover{
-  cursor:pointer;
-=======
 
 .arrawUp {
   width: 40px;
@@ -75,5 +67,4 @@ html {
   border-radius: 140px 0 0 0;
   padding: 5px;
   text-decoration: underline;
->>>>>>> 95300f17052e24803bf4e9ea38c7a4d7ad99addb
 }
