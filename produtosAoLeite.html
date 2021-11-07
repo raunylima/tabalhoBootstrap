@@ -10,10 +10,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/estilo.css">
-   
-      
-    
+    <link rel="stylesheet" href="css/estilo.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -53,10 +51,22 @@
                   class="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarDropdown"
                 >
-                  <li><a href="#chocLeite" class="dropdown-item">Chocolate ao Leite</a></li>
-                  <li><a href="#chocIntenso" class="dropdown-item">Intenso</a></li>
-                  <li><a href="#chocBranco" class="dropdown-item">Chocolate Branco</a></li>
-                  <li><a href="#chocVegano" class="dropdown-item">Vegano</a></li>
+                  <li>
+                    <a href="#chocLeite" class="dropdown-item"
+                      >Chocolate ao Leite</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#chocIntenso" class="dropdown-item">Intenso</a>
+                  </li>
+                  <li>
+                    <a href="#chocBranco" class="dropdown-item"
+                      >Chocolate Branco</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#chocVegano" class="dropdown-item">Vegano</a>
+                  </li>
                   <li><a href="#chocRuby" class="dropdown-item">Ruby</a></li>
                 </ul>
               </li>
@@ -97,27 +107,51 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/capuccino.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col">
+                        <img class="imgModal" src="img/capuccino.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal col">Trufa</p>
+                        <p class="pModal col">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal"
+            >
+              <img class="imgCardHover" src="img/capuccino.jpg" />
             </div>
             <div class="card-body">
-              <p class="card-text">Trufa creme de baunilha com chocolate belga e canela.</p>
-            </div>
-          </div>
-          <div
-            class="
-              col-sm-6 col-md-6 col-lg-3
-              d-flex
-              flex-column
-              align-items-center
-            "
-          >
-            <div class="card">
-              <img src="img/anis.jpg" />
-            </div>
-            <div class="card-body mx-auto">
-              <p class="card-text">Venha se deliciar com nosso espetácular Break Code. 
-                Feito com cremoso chocolate ao leite com pedaços de amêndoas, macadâmia , blueberry e cerejas. 
+              <p class="card-text">
+                Trufa creme de baunilha com chocolate belga e canela.
               </p>
             </div>
           </div>
@@ -129,11 +163,54 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/choco-AoLeite (13).jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal2">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/anis.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Break Code</p>
+                        <p class="pModal">
+                          Venha se deliciar com nosso espetácular Break Code.
+                          Feito com cremoso chocolate ao leite com pedaços de
+                          amêndoas, macadâmia , blueberry e cerejas.
+                        </p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal2"
+            >
+              <img class="imgCardHover" src="img/anis.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text"> Experimente o mais puro chocolate Belga feito especialmente para você direito da Cacau Code para sua casa  </p>
+              <p class="card-text">Break Code.</p>
             </div>
           </div>
           <div
@@ -144,20 +221,121 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/sortido.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal3">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-9 col-sm-12">
+                        <img
+                          class="imgModal"
+                          src="img/choco-AoLeite (13).jpg"
+                        />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal3"
+            >
+              <img class="imgCardHover" src="img/choco-AoLeite (13).jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Aprecie essa variedade de sabores recheados com castanhas , frutas , licores , ganaches e muito mais para os paladares mais requintados e exigentes</p>
+              <p class="card-text">
+                Experimente o mais puro chocolate Belga feito especialmente para
+                você direito da Cacau Code para sua casa
+              </p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal4">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/sortido.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal4"
+            >
+              <img class="imgCardHover" src="img/sortido.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">
+                Aprecie essa variedade de sabores recheados com castanhas ,
+                frutas , licores , ganaches e muito mais para os paladares mais
+                requintados e exigentes
+              </p>
             </div>
           </div>
         </div>
-        <!-- <div class="imgPar"></div> -->
-        <hr>
+
+        <hr />
         <div class="text">
           <h1 id="chocBranco" style="scroll-behavior: smooth">
-            
-        Chocolate Branco</h1>
+            Chocolate Branco
+          </h1>
         </div>
         <div class="row">
           <div
@@ -168,11 +346,51 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/branco4.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal5">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/branco4.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal5"
+            >
+              <img class="imgCardHover" src="img/branco4.jpg" />
             </div>
             <div class="card-body">
-              <p class="card-text">Trufas brancas recheadas com chocolate intenso belga com cookies</p>
+              <p class="card-text">
+                Trufas brancas recheadas com chocolate intenso belga com cookies
+              </p>
             </div>
           </div>
           <div
@@ -183,11 +401,53 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/bkCode.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal6">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/bkCode.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal6"
+            >
+              <img class="imgCardHover" src="img/bkCode.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Venha se deliciar com nosso espetácular Break Code. Feito chocolate branco , pistache , amêndoas, macadâmia, cranberry e cerejas</p>
+              <p class="card-text">
+                Venha se deliciar com nosso espetácular Break Code. Feito
+                chocolate branco , pistache , amêndoas, macadâmia, cranberry e
+                cerejas
+              </p>
             </div>
           </div>
           <div
@@ -198,11 +458,51 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/brancoCOCO.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal7">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/brancoCOCO.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal7"
+            >
+              <img class="imgCardHover" src="img/brancoCOCO.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufa de coco cremoso com chocolate branco creme de cacau </p>
+              <p class="card-text">
+                Trufa de coco cremoso com chocolate branco creme de cacau
+              </p>
             </div>
           </div>
           <div
@@ -213,11 +513,51 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/branco5.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal8">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/branco5.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal8"
+            >
+              <img class="imgCardHover" src="img/branco5.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufa cremosa de capuccino com chocolate branco </p>
+              <p class="card-text">
+                Trufa cremosa de capuccino com chocolate branco
+              </p>
             </div>
           </div>
         </div>
@@ -234,11 +574,51 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/truffaCacau.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal9">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/truffaCacau.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal9"
+            >
+              <img class="imgCardHover" src="img/truffaCacau.jpg" />
             </div>
             <div class="card-body">
-              <p class="card-text">Trufas belgas cremosa de chocolate intenso </p>
+              <p class="card-text">
+                Trufas belgas cremosa de chocolate intenso
+              </p>
             </div>
           </div>
           <div
@@ -249,11 +629,51 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/dark.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal10">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/dark.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal10"
+            >
+              <img class="imgCardHover" src="img/dark.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufas tradicionais feitas com mais puro cacau brasileiro</p>
+              <p class="card-text">
+                Trufas tradicionais feitas com mais puro cacau brasileiro
+              </p>
             </div>
           </div>
           <div
@@ -264,11 +684,51 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/branco3.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal11">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/branco3.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal11"
+            >
+              <img class="imgCardHover" src="img/branco3.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas com gianduia e pedaços avelãs</p>
+              <p class="card-text">
+                Trufas belgas com gianduia e pedaços avelãs
+              </p>
             </div>
           </div>
           <div
@@ -279,11 +739,51 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/cherry2.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal12">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/cherry2.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal12"
+            >
+              <img class="imgCardHover" src="img/cherry2.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Bombons finos com cerejas calda de Cherry blend </p>
+              <p class="card-text">
+                Bombons finos com cerejas calda de Cherry blend
+              </p>
             </div>
           </div>
         </div>
@@ -300,11 +800,51 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/ruby.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal13">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/ruby.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal13"
+            >
+              <img class="imgCardHover" src="img/ruby.jpg" />
             </div>
             <div class="card-body">
-              <p class="card-text">Trufas de chocolate Ruby calda de morango e ganache Ruby</p>
+              <p class="card-text">
+                Trufas de chocolate Ruby calda de morango e ganache Ruby
+              </p>
             </div>
           </div>
           <div
@@ -315,11 +855,49 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/ruby2.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal14">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/ruby2.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal14"
+            >
+              <img class="imgCardHover" src="img/ruby2.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufa de chocolate Ruby com ganache Ruby </p>
+              <p class="card-text">Trufa de chocolate Ruby com ganache Ruby</p>
             </div>
           </div>
           <div
@@ -330,11 +908,53 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/bkrubi.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal15">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/bkrubi.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal15"
+            >
+              <img class="imgCardHover" src="img/bkrubi.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Venha se deliciar com nosso espetácular Break Code. Feito com cremoso chocolate Ruby com pedaços de amêndoas, macadâmia , blueberry e framboesa.</p>
+              <p class="card-text">
+                Venha se deliciar com nosso espetácular Break Code. Feito com
+                cremoso chocolate Ruby com pedaços de amêndoas, macadâmia ,
+                blueberry e framboesa.
+              </p>
             </div>
           </div>
           <div
@@ -345,11 +965,52 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/buby3.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal16">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/buby3.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal16"
+            >
+              <img class="imgCardHover" src="img/buby3.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Bombons sortidos com chocolate Ruby recheados de morango, framboesa , amora com frutas 100% naturais.</p>
+              <p class="card-text">
+                Bombons sortidos com chocolate Ruby recheados de morango,
+                framboesa , amora com frutas 100% naturais.
+              </p>
             </div>
           </div>
         </div>
@@ -366,11 +1027,52 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/pistache.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal17">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/pistache.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal17"
+            >
+              <img class="imgCardHover" src="img/pistache.jpg" />
             </div>
             <div class="card-body">
-              <p class="card-text">Trufa de pistache e massa de cacau com caju 100% natural e vegetal</p>
+              <p class="card-text">
+                Trufa de pistache e massa de cacau com caju 100% natural e
+                vegetal
+              </p>
             </div>
           </div>
           <div
@@ -381,11 +1083,52 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/granola.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal18">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/granola.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal18"
+            >
+              <img class="imgCardHover" src="img/granola.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufa Cacau 100% com ingredientes puramente selecionados de origem vegetais , amêndoas, granola natural e bio massa.</p>
+              <p class="card-text">
+                Trufa Cacau 100% com ingredientes puramente selecionados de
+                origem vegetais , amêndoas, granola natural e bio massa.
+              </p>
             </div>
           </div>
           <div
@@ -396,11 +1139,52 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/tamaras.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal19">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/tamaras.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal19"
+            >
+              <img class="imgCardHover" src="img/tamaras.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufas especialmente preparada com tâmaras, amêndoas e macadâmia com toque de canela e baunilha. </p>
+              <p class="card-text">
+                Trufas especialmente preparada com tâmaras, amêndoas e macadâmia
+                com toque de canela e baunilha.
+              </p>
             </div>
           </div>
           <div
@@ -411,15 +1195,55 @@
               align-items-center
             "
           >
-            <div class="card">
-              <img src="img/chocoMatcha.jpg" />
+            <!----- Modal ----->
+            <div class="modal fade" id="chocModal20">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-9">
+                        <img class="imgModal" src="img/chocoMatcha.jpg" />
+                      </div>
+                      <div class="col-lg-3 col-md-12">
+                        <p class="pModal">Trufa</p>
+                        <p class="pModal">Delecia de trufa</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Qtd</th>
+                              <th>Kcal</th>
+                              <th>Açúcar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>250</td>
+                              <td>49g</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#chocModal20"
+            >
+              <img class="imgCardHover" src="img/chocoMatcha.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufa de Matcha  com massa de cacau, tâmaras , uva passa , amêndoas e castanha do pará  </p>
+              <p class="card-text">
+                Trufa de Matcha com massa de cacau, tâmaras , uva passa ,
+                amêndoas e castanha do pará
+              </p>
             </div>
           </div>
         </div>
-
       </section>
     </main>
 
