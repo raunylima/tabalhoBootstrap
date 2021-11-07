@@ -1,0 +1,126 @@
+body{
+    background-image: url(../img/bg-indexh.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.abs1{
+    position: absolute;
+    top: 5rem;
+    right: 0rem;
+    background-color: hsla(0, 0%, 0%, 0.05);
+    backdrop-filter: blur(1.2px);
+    width: 100%;
+    text-align: end;
+}
+
+.abs1 li{
+    margin-right: 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 70vh;
+}
+h1{
+    margin-top: .1rem;
+    color: #fff;
+    font-family: 'Berkshire Swash';
+}
+
+.ap{
+    color: #fff;
+    font: 400 1.563rem 'Berkshire Swash';
+    margin-top: 8rem;
+}
+
+nav{
+    background-color: hsla(0, 0%, 0%, 0.05);
+    backdrop-filter: blur(1.2px);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 20vh;
+}
+
+.soc-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15rem;
+    margin-bottom: 3rem;
+}
+
+.soc-container img{
+    height: 1.5rem;
+}
+
+.hv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.hv:hover{
+    background-color: hsla(0, 0%, 0%, 0.8);
+    backdrop-filter: blur(1.2px);
+    border-radius: 25%;
+}
+
+#logo{
+    height: 10rem;
+    margin-top: 10rem;
+}
+
+@media(min-width:767px){
+    #logo{
+        height: 10.5rem;
+    }
+    .ap{
+        font-size: 2rem;
+    }
+    .soc-container{
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width:991px){
+    .abs1{
+        position:static;
+        background-color: transparent;
+        backdrop-filter: none;
+    }
+}
+
+@media(min-width:1023px){
+    body{
+    background-image: url(../img/bg-index.jpeg);
+    }
+    main{
+        align-items: flex-start;
+        text-align: start;
+    }
+    .soc-container{
+        margin-right: 3rem;
+    }
+    #logo{
+        height: 11rem;
+    }
+    .ap{
+        width: 50%;
+        font-size: 2.3rem;
+    }    
+}

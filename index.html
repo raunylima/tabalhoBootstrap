@@ -10,30 +10,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
-    <style>
-      .texto {
-        background-image: linear-gradient(
-          155deg,
-          #ffef0d,
-          #432f47,
-          #12fa65,
-          #1c83b3
-        );
-        -webkit-background-clip: text;
-        /* -webkit-text-fill-color: transparent; */
-        background-clip: text;
-
-        color: transparent;
-        font-size: 24px;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark test3">
         <section class="container-fluid">
-          <p class="navbar-brand">Logo aqui</p>
+          <p class="navbar-brand"><img style="height: 2.5rem;" src="img/logow.svg" alt=""></p>
           <button
             class="navbar-toggler"
             type="button"
@@ -46,7 +34,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-end abs1"
             id="navbarNav"
           >
             <ul class="navbar-nav">
@@ -85,46 +73,30 @@
       </nav>
     </header>
     <main>
-      <section class="container">
-        <div class="row mt-5">
-          <div class="col-lg-8 col-md-12 mb-5 mx-auto">
-            <img
-              src="https://source.unsplash.com/500x500/photos/chocolate"
-              class="mx-auto"
-            />
-          </div>
-          <div class="col-lg-4 col-md-12">
-            <p class="texto">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-              earum consequuntur vel eligendi nobis, deserunt quaerat impedit
-              numquam officia quod! Expedita aliquam esse optio, earum placeat
-              totam commodi inventore ipsam. Qui porro ipsam distinctio dicta
-              voluptatibus doloremque expedita quidem cumque cum. Incidunt
-              obcaecati aliquam itaque, commodi, deleniti in, a similique dolor
-              provident tempore deserunt ducimus officiis ratione aliquid? Odit,
-              dignissimos. Cumque quis minus dolorem, eos veniam laboriosam eum
-              sapiente perferendis, expedita a id ab aspernatur possimus
-              voluptas earum aliquam similique fugiat quidem saepe. Officia
-              aperiam quae minima modi cum laudantium. Veritatis non quisquam
-              eum, quo cumque minus in. Numquam deleniti aliquid illo, corporis
-              quae provident veritatis aliquam velit error, id ullam suscipit,
-              eaque consectetur temporibus nesciunt officia doloribus ex
-              adipisci. Accusantium, cum impedit! Non sapiente cupiditate iure
-              aperiam qui ducimus ullam laborum in alias beatae consequatur
-              nihil assumenda tenetur sint et nisi iusto, laboriosam commodi
-              possimus optio exercitationem reiciendis modi.
-            </p>
-          </div>
+      <section>
+        <img id="logo" src="img/logow.svg" alt="">
+        <h1>CacauCode</h1>
+      </section>
+      <section>
+        <div class="ap">
+          <p>
+            Há 6 anos no mercado, conhecida pelos seus deliciosos brigadeiros gourmets e doces.
+          </p>
         </div>
       </section>
     </main>
 
     <footer class="text-muted py-2">
-      <div class="container">
-        <p class="float-end mb-1">
-          <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1">Nosso site &copy; Porduzido...</p>
+      <div class="container soc-container">
+        <div class="hv" id="ig">
+          <a href="#"><img src="img/insta-logow.svg" alt=""></a>
+        </div>
+        <div class="hv" id="tt">
+          <a href="#"><img src="img/twitter-logow.svg" alt=""></a>
+        </div>
+        <div class="hv" id="fb">
+          <a href="#"><img src="img/facebook-logow.svg" alt=""></a>
+        </div>
       </div>
     </footer>
     <script
