@@ -10,49 +10,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <style>
-      img {
-        width: 100%;
-        height: 100%;
-        transition: all 0.8s;
-      }
-      img:hover {
-        transform: scale(1.3);
-        overflow: hidden;
-      }
-      .card {
-        width: 14rem;
-        height: 14rem;
-        overflow: hidden;
-        border-radius: 20px;
-      }
-      .text {
-        text-align: center;
-        margin-bottom: 60px;
-      }
-      .imgPromocao {
-        width: 100%;
-        height: 300px;
-        background-image: url(img/promocaoAoLeite.jpg);
-        background-repeat: no-repeat;
-        background-size: cover 100%;
-        background-position: center left;
-        filter: brightness(50%);
-      }
-      .pp {
-        width: 70%;
-        height: 250px;
-        position: absolute;
-        top: 10%;
-        color: white;
-        margin: 20px 0 0 50px;
-        /* width: 50%; */
-      }
-      .pp h2,
-      .pp p {
-        font-size: clamp(2.5rem, 2rem + 3vw, 4rem);
-      }
-    </style>
+    <link rel="stylesheet" href="css/estilo.css">
+   
+      
+    
     <title>Document</title>
   </head>
   <body>
@@ -86,14 +47,17 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   class="nav-link dropdown-toggle"
-                  >Produtos</a
+                  >Chocolates</a
                 >
                 <ul
                   class="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarDropdown"
                 >
-                  <li><a href="#" class="dropdown-item">Ao leite</a></li>
-                  <li><a href="#" class="dropdown-item">50% Cacau</a></li>
+                  <li><a href="#chocLeite" class="dropdown-item">Chocolate ao Leite</a></li>
+                  <li><a href="#chocIntenso" class="dropdown-item">Intenso</a></li>
+                  <li><a href="#chocBranco" class="dropdown-item">Chocolate Branco</a></li>
+                  <li><a href="#chocVegano" class="dropdown-item">Vegano</a></li>
+                  <li><a href="#chocRuby" class="dropdown-item">Ruby</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -110,6 +74,7 @@
         </section>
       </nav>
     </header>
+
     <main>
       <section class="promocaoImg">
         <div class="imgPromocao"></div>
@@ -118,9 +83,10 @@
           <p>10% em toda a linha Ao Leite</p>
         </div>
       </section>
+
       <section class="container my-3">
         <div class="text">
-          <h1>Chocolates ao leite</h1>
+          <h1 id="chocLeite">Chocolates ao leite</h1>
         </div>
         <div class="row">
           <div
@@ -132,10 +98,10 @@
             "
           >
             <div class="card">
-              <img src="img/choco-AoLeite (1).jpg" />
+              <img src="img/capuccino.jpg" />
             </div>
             <div class="card-body">
-              <p class="card-text">Trufas belgas</p>
+              <p class="card-text">Trufa creme de baunilha com chocolate belga e canela.</p>
             </div>
           </div>
           <div
@@ -147,136 +113,12 @@
             "
           >
             <div class="card">
-              <img src="img/choco-AoLeite (7).jpg" />
+              <img src="img/anis.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas</p>
-            </div>
-          </div>
-          <div
-            class="
-              col-sm-6 col-md-6 col-lg-3
-              d-flex
-              flex-column
-              align-items-center
-            "
-          >
-            <div class="card">
-              <img src="img/choco-AoLeite (10).jpg" />
-            </div>
-            <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas</p>
-            </div>
-          </div>
-          <div
-            class="
-              col-sm-6 col-md-6 col-lg-3
-              d-flex
-              flex-column
-              align-items-center
-            "
-          >
-            <div class="card">
-              <img src="img/choco-AoLeite (6).jpg" />
-            </div>
-            <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div
-            class="
-              col-sm-6 col-md-6 col-lg-3
-              d-flex
-              flex-column
-              align-items-center
-            "
-          >
-            <div class="card">
-              <img src="img/choco-AoLeite (5).jpg" />
-            </div>
-            <div class="card-body">
-              <p class="card-text">Trufas belgas</p>
-            </div>
-          </div>
-          <div
-            class="
-              col-sm-6 col-md-6 col-lg-3
-              d-flex
-              flex-column
-              align-items-center
-            "
-          >
-            <div class="card">
-              <img src="img/choco-AoLeite (4).jpg" />
-            </div>
-            <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas</p>
-            </div>
-          </div>
-          <div
-            class="
-              col-sm-6 col-md-6 col-lg-3
-              d-flex
-              flex-column
-              align-items-center
-            "
-          >
-            <div class="card">
-              <img src="img/choco-AoLeite (2).jpg" />
-            </div>
-            <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas</p>
-            </div>
-          </div>
-          <div
-            class="
-              col-sm-6 col-md-6 col-lg-3
-              d-flex
-              flex-column
-              align-items-center
-            "
-          >
-            <div class="card">
-              <img src="img/choco-AoLeite (8).jpg" />
-            </div>
-            <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div
-            class="
-              col-sm-6 col-md-6 col-lg-3
-              d-flex
-              flex-column
-              align-items-center
-            "
-          >
-            <div class="card">
-              <img src="img/choco-AoLeite (14).jpg" />
-            </div>
-            <div class="card-body">
-              <p class="card-text">Trufas belgas</p>
-            </div>
-          </div>
-          <div
-            class="
-              col-sm-6 col-md-6 col-lg-3
-              d-flex
-              flex-column
-              align-items-center
-            "
-          >
-            <div class="card">
-              <img src="img/choco-AoLeite (3).jpg" />
-            </div>
-            <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas</p>
+              <p class="card-text">Venha se deliciar com nosso espetácular Break Code. 
+                Feito com cremoso chocolate ao leite com pedaços de amêndoas, macadâmia , blueberry e cerejas. 
+              </p>
             </div>
           </div>
           <div
@@ -291,7 +133,7 @@
               <img src="img/choco-AoLeite (13).jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas</p>
+              <p class="card-text"> Experimente o mais puro chocolate Belga feito especialmente para você direito da Cacau Code para sua casa  </p>
             </div>
           </div>
           <div
@@ -303,13 +145,281 @@
             "
           >
             <div class="card">
-              <img src="img/choco-AoLeite (12).jpg" />
+              <img src="img/sortido.jpg" />
             </div>
             <div class="card-body mx-auto">
-              <p class="card-text">Trufas belgas</p>
+              <p class="card-text">Aprecie essa variedade de sabores recheados com castanhas , frutas , licores , ganaches e muito mais para os paladares mais requintados e exigentes</p>
             </div>
           </div>
         </div>
+        <!-- <div class="imgPar"></div> -->
+        <hr>
+        <div class="text">
+          <h1 id="chocBranco" style="scroll-behavior: smooth">
+            
+        Chocolate Branco</h1>
+        </div>
+        <div class="row">
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/branco4.jpg" />
+            </div>
+            <div class="card-body">
+              <p class="card-text">Trufas brancas recheadas com chocolate intenso belga com cookies</p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/bkCode.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Venha se deliciar com nosso espetácular Break Code. Feito chocolate branco , pistache , amêndoas, macadâmia, cranberry e cerejas</p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/brancoCOCO.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Trufa de coco cremoso com chocolate branco creme de cacau </p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/branco5.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Trufa cremosa de capuccino com chocolate branco </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text">
+          <h1 id="chocIntenso">Chocolate Intenso</h1>
+        </div>
+        <div class="row">
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/truffaCacau.jpg" />
+            </div>
+            <div class="card-body">
+              <p class="card-text">Trufas belgas cremosa de chocolate intenso </p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/dark.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Trufas tradicionais feitas com mais puro cacau brasileiro</p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/branco3.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Trufas belgas com gianduia e pedaços avelãs</p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/cherry2.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Bombons finos com cerejas calda de Cherry blend </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text">
+          <h1 id="chocRuby">Chocolate Ruby</h1>
+        </div>
+        <div class="row">
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/ruby.jpg" />
+            </div>
+            <div class="card-body">
+              <p class="card-text">Trufas de chocolate Ruby calda de morango e ganache Ruby</p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/ruby2.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Trufa de chocolate Ruby com ganache Ruby </p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/bkrubi.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Venha se deliciar com nosso espetácular Break Code. Feito com cremoso chocolate Ruby com pedaços de amêndoas, macadâmia , blueberry e framboesa.</p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/buby3.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Bombons sortidos com chocolate Ruby recheados de morango, framboesa , amora com frutas 100% naturais.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text">
+          <h1 id="chocVegano">Chocolate Vegano</h1>
+        </div>
+        <div class="row">
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/pistache.jpg" />
+            </div>
+            <div class="card-body">
+              <p class="card-text">Trufa de pistache e massa de cacau com caju 100% natural e vegetal</p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/granola.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Trufa Cacau 100% com ingredientes puramente selecionados de origem vegetais , amêndoas, granola natural e bio massa.</p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/tamaras.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Trufas especialmente preparada com tâmaras, amêndoas e macadâmia com toque de canela e baunilha. </p>
+            </div>
+          </div>
+          <div
+            class="
+              col-sm-6 col-md-6 col-lg-3
+              d-flex
+              flex-column
+              align-items-center
+            "
+          >
+            <div class="card">
+              <img src="img/chocoMatcha.jpg" />
+            </div>
+            <div class="card-body mx-auto">
+              <p class="card-text">Trufa de Matcha  com massa de cacau, tâmaras , uva passa , amêndoas e castanha do pará  </p>
+            </div>
+          </div>
+        </div>
+
       </section>
     </main>
 
