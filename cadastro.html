@@ -10,7 +10,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/forms.css">
@@ -20,47 +22,70 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: brown;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
-            </div>
-          </div>
-        </div>
-      </nav> <!-- navteste -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4B2F28;
+          ">
+            <section class="container-fluid">
+                <p class="navbar-brand"><img style="height: 2.5rem;" src="img/logow.svg" alt=""></p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end abs1" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+                                class="nav-link dropdown-toggle">Produtos</a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+                                <li><a href="produtosAoLeite.html" class="dropdown-item">Ao leite</a></li>
+                                <li><a href="produtosCacau.html" class="dropdown-item">50% Cacau</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="aboutus.html" class="nav-link">Idealizadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faleConosco.html" class="nav-link">Deixe sua marca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cadastro.html" class="nav-link active">Seja um fornecedor</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+    </header>
 
-    <main> 
-        <div class="container w-75"id="teste">
-            <h1>Seja um Chocoder</h1>
-            <h5 style="margin: 0;" class="fw-bolder">preencha o formulário para poder comprar nossas delícias especialmente codificadas para seu paladar</h5>    
+    <main>
+        <div class="container w-75" id="teste">
             <div>
                 <img src="img/icons/choco_gotas.png" style="width: 100%; margin: 0;">
             </div>
-            
+            <h1>Seja um Chocoder</h1>
+            <h5 style="margin: 0;" class="fw-bolder">preencha o formulário para poder comprar nossas delícias
+                especialmente codificadas para seu paladar</h5>
+            <hr>
             <!-- colocar imagenzinhas ícones -->
-                <!-- nome --> 
-                <!-- cpf com validação -->
-                <!-- genero -->
-                <!-- data dde nascimento (validar) -->
+            <!-- nome -->
+            <!-- cpf com validação -->
+            <!-- genero -->
+            <!-- data dde nascimento (validar) -->
 
-                <!-- email -->
-                <!-- telefone --> 
-                <!-- tipo do telefone (celular, residencial, comercial) deitado -->
-                
-                <!-- cep com a api para endereço e os caraio-->
-                <!-- colocar as telinhas que aparecem (modal) -->
-            <form id="form1" class="row g-3 mb-4" onsubmit="return enviarDados()"> 
+            <!-- email -->
+            <!-- telefone -->
+            <!-- tipo do telefone (celular, residencial, comercial) deitado -->
+
+            <!-- cep com a api para endereço e os caraio-->
+            <!-- colocar as telinhas que aparecem (modal) -->
+            <form id="form1" class="row g-3 mb-4" onsubmit="return enviarDados()">
 
                 <!-- *************************** INFO PESSOAL ******************************** -->
-                <h6 class="text-center mt-5 fw-bolder">Queremos saber mais sobre quem é você <hr></h6>
+                <h6 class="text-center mt-5 fw-bolder">Queremos saber mais sobre quem é você
+                    <hr>
+                </h6>
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <input type="text" id="nome" class="form-control person" placeholder="Digite seu nome completo">
                 </div> <!-- nome -->
@@ -70,7 +95,8 @@
                 </div> <!-- cpf -->
 
                 <div class="col-sm-12 col-md-6 col-lg-12">
-                    <input type="date" id="dtNascimento" class="form-control calendar" title="Digite usa data de nascimento">
+                    <input type="date" id="dtNascimento" class="form-control calendar"
+                        title="Digite usa data de nascimento">
                 </div> <!-- data nascimento -->
 
                 <!-- Gênero -->
@@ -82,12 +108,12 @@
                             <input type="radio" id="rdGenero1" name="genero" value="masculino">
                             <label for="rdGenero1">Masculino</label>
                         </span>
-                        
+
                         <span class="mx-2">
                             <input type="radio" id="rdGenero2" name="genero" value="feminino">
                             <label for="rdGenero2">Feminino</label>
                         </span>
-                        
+
                         <span class="mx-2">
                             <input type="radio" id="rdGenero3" name="genero" value="naobin">
                             <label for="rdGenero3">Não-Binário</label>
@@ -101,12 +127,14 @@
                         <span class="mx-2">
                             <input type="radio" id="rdGenero5" name="genero" value="nenhum" checked>
                             <label for="rdGenero5">Prefiro não informar</label>
-                        </span>               
+                        </span>
                     </div><!-- inline -->
-                </div>  <!-- gênero -->
+                </div> <!-- gênero -->
 
                 <!-- *************************** CONTATO ******************************** -->
-                <h6 class="text-center mt-5 fw-bolder">Como podemos te contatar?<hr></h6>
+                <h6 class="text-center mt-5 fw-bolder">Como podemos te contatar?
+                    <hr>
+                </h6>
                 <!-- email -->
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <input type="email" id="email" class="form-control mail" placeholder="Digite seu email">
@@ -141,7 +169,9 @@
                 </div> <!-- tipo telefone-->
 
                 <!-- *************************** CONTA ******************************** -->
-                <h6 class="text-center mt-5 fw-bolder">Detalhes para login<hr></h6>
+                <h6 class="text-center mt-5 fw-bolder">Detalhes para login
+                    <hr>
+                </h6>
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <input type="password" id="senha" class="form-control key" placeholder="Digite uma senha">
@@ -152,7 +182,8 @@
                 </div><!-- confirmação senha-->
 
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                    <input type="email" id="emailRecu" class="form-control mail" placeholder="Digite um email de recuperação">
+                    <input type="email" id="emailRecu" class="form-control mail"
+                        placeholder="Digite um email de recuperação">
                 </div> <!-- email de resgate -->
 
 
@@ -160,16 +191,19 @@
                 <!-- quando for desenvolver a api, lembrar de colocar o mesmo nome que vem
                 do site nos campos -->
                 <!-- informações de endereço -->
-                <h6 class="text-center mt-5 fw-bolder">Onde entregaremos seus docinhos?<hr></h6>
+                <h6 class="text-center mt-5 fw-bolder">Onde entregaremos seus docinhos?
+                    <hr>
+                </h6>
 
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="input-group">
                         <input type="text" id="cep" class="form-control cep" placeholder="Digite seu cep">
-                        <span class="input-group-text" id="basic-addon2"><a href="https://buscacepinter.correios.com.br/app/endereco/index.php">Correios</a></span>
+                        <span class="input-group-text" id="basic-addon2"><a
+                                href="https://buscacepinter.correios.com.br/app/endereco/index.php">Correios</a></span>
                     </div>
                 </div><!-- cep -->
 
-                <div class="col-sm-12 col-md-4 col-lg-4" >
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <input type="text" class="form-control build" id="uf" placeholder="UF">
                 </div> <!-- uf -->
 
@@ -188,7 +222,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <input type="text" class="form-control complemento" id="complemento" placeholder="Complemento">
                 </div> <!-- complemento -->
-                
+
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <input type="text" class="form-control numero" id="noRes" placeholder="Número">
                 </div> <!-- no Res-->
@@ -201,7 +235,8 @@
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="termosContrato" value="tc1">
-                        <label class="form-check-label" for="termosContrato"> Li e aceito os <a href="#">Termos de Contrato</a></label>
+                        <label class="form-check-label" for="termosContrato"> Li e aceito os <a href="#">Termos de
+                                Contrato</a></label>
                     </div> <!-- concordo com os termos do contrato-->
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
@@ -223,41 +258,61 @@
         </div><!-- container -->
 
         <!-- Modal -->
-        <div class="modal fade" id="modalAlerta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="modalAlerta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Atenção</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Atençao</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p id="textoModal">...</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div> <!-- modal alerta-->
+
+        <!-- Modal Sucesso-->
+        <div class="modal fade" id="modalSucesso" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Mensagem Enviada</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="textoModal">Os dados foram enviados com sucesso, você receberá um email de confirmação. Você é oficialmente um Chocoder.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button>
                 </div>
             </div>
             </div>
-        </div> <!-- modal alerta-->
+        </div> <!-- modal sucesso-->
     </main>
 
-    <footer class="border-top" style="background-color: brown;">
+    <footer class="border-top" style="background-color: #61210f;
+    background-image: linear-gradient(-315deg, #61210f 0%, #4B2F28 74%);">
         <div class="container-fluid">
             <div class="row py-3 text-center">
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4 text-white">
                     &copy; 2021 - Cacau Code
                 </div><!-- col1-->
 
                 <div class="col-sm-12 col-md-4">
-                    <a href="#" class="text-decoration-none text-dark">Política de Privacidade</a>
+                    <a href="#" class="text-decoration-none text-white">Política de Privacidade</a>
                 </div><!-- col2-->
 
                 <div class="col-sm-12 col-md-4">
-                    <a href="#" class="text-decoration-none text-dark">Administração</a>
+                    <a href="#" class="text-decoration-none text-white">Administração</a>
                 </div><!-- col3-->
 
             </div><!-- row -->
-        </div> <!--container-fluid-->
+        </div>
+        <!--container-fluid-->
     </footer> <!-- footer -->
 
 
