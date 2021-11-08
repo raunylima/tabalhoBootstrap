@@ -74,3 +74,27 @@ hr {
 h2 {
   font-size: 2.5rem;
 }
+
+.abs1 {
+  text-align: end;
+}
+.bg-br{
+  background-color: #4b2f28b2;
+  border: none;
+}
+
+.sc{
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+}
+
+footer img {
+  height: 1.5rem;
+}
+
+@media (min-width: 991px) {
+  .abs1 {
+    text-align: start;
+  }
+}

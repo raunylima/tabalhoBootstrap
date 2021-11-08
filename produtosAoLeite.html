@@ -13,9 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 
@@ -29,8 +27,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #61210f;
-    background-image: linear-gradient(315deg, #61210f 0%, #4B2F28 74%);">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4B2F28;">
         <section class="container-fluid">
             <p class="navbar-brand"><a href="index.html"><img style="height: 2.5rem;" src="img/logog.svg" alt=""></a></p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,7 +47,7 @@
                          aria-expanded="false"
                           class="nav-link dropdown-toggle active">Chocolates</a>
                         <ul 
-                        class="dropdown-menu dropdown-menu-dark text-end bg-black bg-opacity-50" aria-labelledby="navbarDropdown">
+                        class="dropdown-menu dropdown-menu-dark bg-br bg-opacity-50 abs1" aria-labelledby="navbarDropdown">
                           <li>
                             <a href="#chocLeite" class="dropdown-item">Ao Leite</a>
                           </li>
@@ -75,7 +72,7 @@
                         <a href="cadastro.html" class="nav-link">Seja um fornecedor</a>
                     </li>
                     <li>
-                        <a href="carrinho.html"><img src="img/icons/shopping-cart.svg" alt=""></a>
+                        <a href="carrinho.html"><img style="opacity: 0.5;" src="img/icons/shopping-cart.svg" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -1342,13 +1339,33 @@
 
   <a href="#"><img class="arrawUp" src="img/icons/arrow-double-up.svg" /></a>
 
-  <footer class="text-muted py-2">
-    <div class="container">
-      <p class="float-end mb-1">
-      </p>
-      <p class="mb-1">Nosso site &copy; Porduzido...</p>
-    </div>
-  </footer>
+  <footer class="border-top" style="background-color: #61210f;
+    background-image: linear-gradient(-315deg, #61210f 0%, #4B2F28 74%);">
+        <div class="container-fluid">
+            <div class="row py-3 text-center">
+              <div class="col-sm-12 col-md-3 text-white">
+                &copy; 2021 - Chocoder
+              </div><!-- col1-->
+              
+              <div class="col-sm-12 col-md-3">
+                <a href="#" class="text-decoration-none text-white">Política de Privacidade</a>
+              </div><!-- col2-->
+              
+              <div class="col-sm-12 col-md-3">
+                <a href="#" class="text-decoration-none text-white">Administração</a>
+              </div><!-- col3-->
+              <div class="col-sm-12 col-md-3">
+                <div class="sc">
+                  <a href="#"><img src="img/insta-logow.svg" alt=""></a>
+                  <a href="#"><img src="img/twitter-logow.svg" alt=""></a>
+                  <a href="#"><img src="img/facebook-logow.svg" alt=""></a>
+                </div>
+              </div>
+
+            </div><!-- row -->
+        </div>
+        <!--container-fluid-->
+    </footer> <!-- footer -->
 
   <div vw class="enabled">
     <div vw-access-button class="active"></div>

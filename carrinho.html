@@ -14,6 +14,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="img/logog.svg" type="image/x-icon">
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -28,8 +29,7 @@
 
   <body onload="exibeCarrinho()">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #61210f;
-      background-image: linear-gradient(315deg, #61210f 0%, #4B2F28 74%);">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4B2F28;">
           <section class="container-fluid">
               <p class="navbar-brand"><a href="index.html"><img style="height: 2.5rem;" src="img/logog.svg" alt=""></a></p>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -64,7 +64,7 @@
 
     <main id="main">
       <div class="container w-75" id="teste">
-        <h1 class="text-center">
+        <h1 class="text-center mt-2">
           Seu Carrinho
           <hr />
         </h1>
@@ -76,30 +76,32 @@
       </div>
     </main>
 
-    <footer class="border-top" style="background-color: #61210f;
-    background-image: linear-gradient(-315deg, #61210f 0%, #4B2F28 74%);">
-      <div class="container-fluid">
-        <div class="row py-3 text-center">
-          <div class="col-sm-12 col-md-4 text-light">&copy; 2021 - Cacau Code</div>
-          <!-- col1-->
+    <footer id="shop" class="border-top" style="background-color: #4B2F28;">
+        <div class="container-fluid">
+            <div class="row py-3 text-center">
+              <div class="col-sm-12 col-md-3 text-white">
+                &copy; 2021 - Chocoder
+              </div><!-- col1-->
+              
+              <div class="col-sm-12 col-md-3">
+                <a href="#" class="text-decoration-none text-white">Política de Privacidade</a>
+              </div><!-- col2-->
+              
+              <div class="col-sm-12 col-md-3">
+                <a href="#" class="text-decoration-none text-white">Administração</a>
+              </div><!-- col3-->
+              <div class="col-sm-12 col-md-3">
+                <div class="sc">  
+                  <a href="#"><img src="img/insta-logow.svg" alt=""></a>
+                  <a href="#"><img src="img/twitter-logow.svg" alt=""></a>
+                  <a href="#"><img src="img/facebook-logow.svg" alt=""></a>
+                </div>
+              </div>
 
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="text-decoration-none text-light"
-              >Política de Privacidade</a
-            >
-          </div>
-          <!-- col2-->
-
-          <div class="col-sm-12 col-md-4">
-            <a href="#" class="text-decoration-none text-light">Administração</a>
-          </div>
-          <!-- col3-->
+            </div><!-- row -->
         </div>
-        <!-- row -->
-      </div>
-      <!--container-fluid-->
-    </footer>
-    <!-- footer -->
+        <!--container-fluid-->
+    </footer> <!-- footer -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

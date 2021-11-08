@@ -20,6 +20,16 @@ input{
     text-indent: 12px;
 }
 
+footer img{
+    height: 1.5rem;
+}
+
+.sc{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+}
+
 @media(min-height: 737px){
     .ftf{
         position: absolute;
