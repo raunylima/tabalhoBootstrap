@@ -3,20 +3,37 @@
 // calcula o somatorio do valor de todos os produtos no carrinho
 function calculaTotal(){
     let arrayProdutos = JSON.parse(localStorage.getItem("carrinho"));
-    let valor = 0;
-    for(let i=0; i<arrayProdutos.length; i++){
-        valor += arrayProdutos[i].preço * quantidade;
-    }
-    return valor;
+    let valor = 0
+    let quantidades = document.querySelectorAll("input")
+    // console.log(quantidades)
+
+    let i=0
+    quantidades.forEach(element => {
+        valor += parseInt(element.value) * arrayProdutos[i].preco
+        i++
+    });
+    $("#valorTotal").text("Valor Total: R$"+ valor +",00")
 }
 
-function listaCarrinho(){
+// deleta um produto do carrinho baseado na comparação de indice
+function deletaItem(id){
+    // console.log("entrei pra deletar")
+    let arrayProdutos = JSON.parse(localStorage.getItem("carrinho"));
 
-}//lista carrinho
+    for(let i=0; i<arrayProdutos.length; i++){
+        if(arrayProdutos[i].id == id){
+            // temos que excluir
+            arrayProdutos.splice(i,1)
+        }
+    }
+    localStorage.setItem("carrinho", JSON.stringify(arrayProdutos));
+    document.location.reload(true)
+}
 
 function exibeCarrinho(){
     let listaCarrinho = document.getElementById("listaCarrinho");
     let arrayProdutos= JSON.parse(localStorage.getItem("carrinho"));
+    
 
     let total = `
             <li class="list-group-item my-2 py-3">
@@ -41,25 +58,24 @@ function exibeCarrinho(){
                     </div> <!-- col2 texto-->
                     
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="input-group mb-3 p-3">
-                            <input type="number" class="form-control" value=1>
-                            <button type="button" class="btn btn-outline-danger">
+                        <div class="input-group mt-5">
+                            <input type="number" class="form-control" value=1 onblur="calculaTotal()">
+                            <button type="button" class="btn btn-outline-danger" onclick="deletaItem(${arrayProdutos[i].id})">
                                 <i class="bi bi-trash"></i>
                             </button>
-                        </div> <!-- input-group mb-3-->
-                        <div class="mt-2 text-end p-2">
-                            <span>Valor do Item: R$ ${arrayProdutos[i].preco}.00</span>
-                        </div> <!-- mt-2 text-end -->
+                        </div> <!-- input-group-->
+                        <div class="text-end">
+                            <span> Valor do Item: R$</span>
+                            <span>${parseFloat(arrayProdutos[i].preco).toFixed(2)} </span>
+                        </div> <!-- text-end -->
                     </div> <!-- col3 controles-->
                 </div><!-- row -->
             </li> <!-- item1-->
     `
-
-
-
     }
 
     
     // colocar o total embaixo
     listaCarrinho.innerHTML += total
+    calculaTotal();
 }
