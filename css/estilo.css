@@ -18,20 +18,13 @@
   border-radius: 20px;
   cursor: pointer;
 }
+.card-text {
+  font-weight: 600;
+}
 .text {
   text-align: center;
   margin-bottom: 60px;
 }
-/* .imgPromocao {
-  width: 100%;
-  max-width: 1600px;
-  height: 300px;
-  background-image: url(../img/banner_1013x300px_02.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center left;
-  filter: brightness(50%);
-} */
 .pp {
   width: 70%;
   height: 250px;
@@ -59,14 +52,25 @@
   transition: all 0.5s;
 }
 .arrawUp:hover {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   right: 0;
   bottom: 0;
   transition: all 0.5s;
-  background-color: blueviolet;
-  /* background-image: url(../img/logog.svg); */
+  background-color: #2e110a;
   border-radius: 140px 0 0 0;
-  padding: 5px;
+  padding: 10px;
+}
+.detalhes {
   text-decoration: underline;
+  cursor: pointer;
+}
+.textSection {
+  margin: 100px 0;
+}
+hr {
+  margin: 100px 0 0 0;
+}
+h2 {
+  font-size: 2.5rem;
 }

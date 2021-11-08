@@ -1,136 +1,134 @@
-html{
-    overflow-y: hidden;
+html {
+  overflow-y: hidden;
 }
 
-body{
-    background-image: url(../img/bg-indexh.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden;
+body {
+  background-image: url(../img/bg-indexh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
 }
 
-.abs1{
-    text-align: end;
+.abs1 {
+  text-align: end;
 }
 
-.bg-transparent{
-    text-align: end;
+.bg-transparent {
+  text-align: end;
 }
 
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    text-align: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
-h1{
-    margin-top: .1rem;
-    color: #fff;
-    font-family: 'Berkshire Swash';
+h1 {
+  margin-top: 0.1rem;
+  color: #fff;
+  font-family: 'Berkshire Swash';
 }
 
-.ap{
-    color: #fff;
-    font: 400 1.563rem 'Berkshire Swash';
+.ap {
+  color: #fff;
+  font: 400 1.563rem 'Berkshire Swash';
+  margin-top: 5rem;
+}
+
+nav {
+  background-color: hsla(0, 0%, 0%, 0.05);
+  backdrop-filter: blur(1.2px);
+  font-family: 'Raleway';
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 3.75rem;
+}
+
+.soc-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+
+.soc-container img {
+  height: 1.5rem;
+}
+
+.hv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.hv:hover {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  backdrop-filter: blur(1.2px);
+  border-radius: 25%;
+}
+
+#logo {
+  height: 10rem;
+}
+
+@media (min-height: 730px) {
+  #logo {
     margin-top: 5rem;
+  }
+  footer {
+    margin-top: 15rem;
+  }
 }
 
-nav{
-    background-color: hsla(0, 0%, 0%, 0.05);
-    backdrop-filter: blur(1.2px);
-    font-family: 'Raleway';
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: 3.75rem;
-}
-
-.soc-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 15rem;
-    margin-bottom: 3rem;
-}
-
-.soc-container img{
-    height: 1.5rem;
-}
-
-.hv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.4rem;
-    width: 2.4rem;
-}
-
-.hv:hover{
-    background-color: hsla(0, 0%, 0%, 0.8);
-    backdrop-filter: blur(1.2px);
-    border-radius: 25%;
-}
-
-#logo{
-    height: 10rem;
-}
-
-@media(min-height: 730px){
-    #logo{
-        margin-top: 5rem;
-    }
-    footer{
-        margin-top: 15rem;
-    }
-}
-
-@media(min-width:991px){
-    .bg-transparent{
+@media (min-width: 991px) {
+  .bg-transparent {
     text-align: start;
-    }
+  }
 }
 
-@media(min-width:767px){
-    #logo{
-        height: 10.5rem;
-    }
-    .ap{
-        font-size: 2rem;
-    }
-    .soc-container{
-        margin-bottom: 0;
-    }
+@media (min-width: 767px) {
+  #logo {
+    height: 10.5rem;
+  }
+  .ap {
+    font-size: 2rem;
+  }
+  .soc-container {
+    margin-bottom: 0;
+  }
 }
 
-
-@media(min-width:1023px){
-    body{
-    background-image: url(../img/bg-index.jpeg);
-    }
-    main{
-        align-items: flex-start;
-        text-align: start;
-    }
-    .soc-container{
-        margin-right: 3rem;
-    }
-    #logo{
-        height: 11rem;
-    }
-    footer{
-        position: absolute;
-        bottom: 3rem;
-        right: 2px;
-    }
-    .ap{
-        width: 50%;
-        font-size: 2.3rem;
-    }    
+@media (min-width: 1023px) {
+  body {
+    background-image: url(../img/bg-index.jpg);
+  }
+  main {
+    align-items: flex-start;
+    text-align: start;
+  }
+  .soc-container {
+    margin-right: 3rem;
+  }
+  #logo {
+    height: 11rem;
+  }
+  footer {
+    position: absolute;
+    bottom: 3rem;
+    right: 2px;
+  }
+  .ap {
+    width: 50%;
+    font-size: 2.3rem;
+  }
 }
