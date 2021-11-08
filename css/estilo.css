@@ -98,3 +98,10 @@ footer img {
     text-align: start;
   }
 }
+.text-certer {
+  margin: 20px 0 20px 0;
+}
+.pModal {
+  /* font-weight: 600; */
+  margin-top: 15px;
+}

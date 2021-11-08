@@ -1,10 +1,4 @@
-// simula um banco com as informações dos produtos da nossa loja
-// {id:, nome:"", desc:"", foto:"../", preco:},
-// <div class="text-center">
-//     <h5>Preço: R$5.00</h5>
-//     <button class="btn btn-primary" onclick="addItem(0)">Eu Quero</button>
-// </div>
-
+// array com os dados dos produtos presentes na loja
 produtos = [
     {id:0, nome:"Trufa Vanilla Canela", desc:"Trufa creme de baunilha com chocolate belga e canela", foto:"img/capuccino.jpg", preco:5, qntd:1},
     {id:1, nome:"Break Code", desc:"cremoso chocolate ao leite com pedaços de amêndoas, macadâmia , blueberry e cerejas.", foto:"img/anis.jpg", preco:3, qntd:1},
@@ -28,14 +22,13 @@ produtos = [
     {id:19, nome:"Trufa de Matcha", desc:"Trufa de Matcha com massa de cacau, tâmaras, uva passa, amêndoas e castanha do pará.", foto:"img/chocoMatcha.jpg", preco:6, qntd:1},
 ]//produtos
 
-
+// array contendo os produtos no carrinho
 // var arrayCarrinho = []
 var arrayCarrinho = JSON.parse(localStorage.getItem("carrinho"));
 
-// poe o item dentro do arraycarrinho
+// poe o item selecionado pelo user dentro do arraycarrinho
 function poeCarrinho(item){
     // percorrendo o carrinho vendo se ja tem um item
-    // ver os tipos
     for(let i=0; i<arrayCarrinho.length; i++){
         if(arrayCarrinho[i].id == item.id){
             // já tem um no carrinho, não precisamos add ele no carrinho
