@@ -1,15 +1,3 @@
-/* fazer:
- trocar por modais
- arrumar focus
- quando o cara nao digitar um email valido fazer ele dar o alertinha
- vlibras
-*/
-
-
-$("#form1").submit(function (e) {
-    e.preventDefault();
-});
-
 // função para setar os dados relacionados ao cep para nada
 function limpaFormCep() {
     $("#uf").val("");
@@ -26,10 +14,6 @@ $("#cep").blur(function () {
     // validação cep
     let cep = $("#cep")
     let cepVal = cep.val().replace("-", "")
-    // 58052-040
-    if (!(cepVal.length == 8)) {
-        alert("cep invalido")
-    }
 
     // consultando a api
     $.getJSON("https://viacep.com.br/ws/" + cepVal + "/json/?callback=?", function (dados) {
@@ -44,7 +28,7 @@ $("#cep").blur(function () {
         else {
             //CEP pesquisado não foi encontrado.
             limpa_formulário_cep();
-            alert("CEP não encontrado");
+            mostrarModal("CEP invalido")
         }//else
     })//getJson
 }) //blur
@@ -53,6 +37,11 @@ $("#cep").blur(function () {
 function mostrarModal(textoErro){
     let modal = $("#modalAlerta")
     $("#textoModal").text(textoErro)
+    new bootstrap.Modal(modal).show()
+}
+
+function modalSucesso(){
+    let modal = $("#modalSucesso")
     new bootstrap.Modal(modal).show()
 }
 
@@ -101,9 +90,7 @@ function validaCpf(cpf) {
     return true;
 } //valida cpf
 
-function validaNome(){
-    
-}
+
 
 function enviarDados() {
     // // validação nome
@@ -180,7 +167,7 @@ function enviarDados() {
     // validação telefone
     let tel = $("#telefone")
     if(tel.val() == ""){
-        mostrarModal("Digite um numero de telefone")
+        mostrarModal("Digite um número de telefone, por favor.")
         $(tel).focus()
         $(tel).addClass(["border", "border-danger"])
         return false;
@@ -204,6 +191,17 @@ function enviarDados() {
     $(senha2).removeClass("border-danger").addClass("border-success")
     // validação das senhas
 
+    // validação cep
+    let cep = $("#cep")
+    let cepVal = cep.val().replace("-", "")
+    if(cepVal.length != 8){
+        mostrarModal("Digite um cep válido, por favor.")
+        $(cep).focus();
+        $(cep).addClass(["border", "border-danger"])
+        return false;
+    }
+    $(cep).removeClass("border-danger").addClass("border-success")
+
     // validação do checkbox
     let ck = $("#termosContrato");
     if(ck[0].checked == false){
@@ -211,5 +209,9 @@ function enviarDados() {
         return false;
     }
 
-    return true;
+    {
+        // modalSucesso();
+        alert("Dados enviados, com sucesso")
+        return true;
+    }
 }
