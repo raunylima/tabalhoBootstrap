@@ -30,88 +30,93 @@
       rel="stylesheet"
     />
     <script src="js/faleConosco.js" defer></script>
-    <title>Chocoder</title>
-  </head>
+    <title>Cacau Code | Deixe sua Marca</title>
+</head>
+
 
   <body>
     <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-dark"
-        style="background-color: #4b2f28"
-      >
-        <section class="container-fluid">
-          <p class="navbar-brand">
-            <a href="index.html"
-              ><img style="height: 2.5rem" src="img/logog.svg" alt=""
-            /></a>
-          </p>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end abs1"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link" aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  href="#"
-                  id="navbarDropdown"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  class="nav-link dropdown-toggle"
-                  >Produtos</a
-                >
-                <ul
-                  class="dropdown-menu dropdown-menu-light"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a href="produtosAoLeite.html" class="dropdown-item"
-                      >Ao leite</a
-                    >
-                  </li>
-                  <li>
-                    <a href="produtosCacau.html" class="dropdown-item"
-                      >50% Cacau</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="aboutus.html" class="nav-link">Idealizadores</a>
-              </li>
-              <li class="nav-item">
-                <a href="faleConosco.html" class="nav-link active"
-                  >Deixe sua marca</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="cadastro.html" class="nav-link">Seja um fornecedor</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4B2F28;
+          ">
+            <section class="container-fluid">
+                <p class="navbar-brand"><a href="index.html"><img style="height: 2.5rem;" src="img/logog.svg" alt=""></a></p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end abs1" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="produtosAoLeite.html" class="nav-link">Produtos</a>
+                          </li>
+                        <li class="nav-item">
+                            <a href="aboutus.html" class="nav-link">Idealizadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faleConosco.html" class="nav-link active">Deixe sua marca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cadastro.html" class="nav-link">Seja um fornecedor</a>
+                        </li>
+                        <li>
+                            <a href="carrinho.html"><img style="opacity: 0.5;" src="img/icons/shopping-cart.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
     </header>
 
-    <main id="main">
-      <div class="container w-75" id="teste">
-        <div>
-          <img src="img/icons/choco_gotas.png" style="width: 100%; margin: 0" />
+    <main id="main"> 
+        <div class="container w-75"id="teste">
+            <div>
+                <img src="img/icons/choco_gotas.png" style="width: 100%; margin: 0;">
+            </div>
+            <h1 class="mt-2">Deixe a sua marca</h1>
+            <h5 style="margin: 0;" class="fw-bolder">preencha o formulário para indicar um novo sabor</h5>    
+            <hr>
+            <form id="form1"  class="row g-3 mb-4" onsubmit="return enviarDados()">
+                <h6 class="text-center mt-5 fw-bolder">Precisamos de algumas informações :)<hr></h6>
+
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <input type="text" id="nome" class="form-control person" placeholder="Digite seu nome completo">
+                </div> <!-- nome -->
+
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <input type="email" id="email" class="form-control mail" placeholder="Digite seu email">
+                </div> <!-- email -->
+
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <input type="text" id="desc" class="form-control texty" placeholder="Uma Breve descrição do seu doce">
+                </div> <!-- desc -->
+
+                <div class="form-floating">
+                    <textarea class="form-control" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Digite sua Receita</label>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="termosContrato" value="tc1">
+                        <label class="form-check-label" for="termosContrato">Li e aceito os </label><span id="contrato" class="text-primary" style="cursor: pointer;"> Termos de Contrato</span>
+                    </div> <!-- concordo com os termos do contrato-->
+                </div>
+
+                <!-- botoes  -->
+                <!-- class="d-flex justify-content-center mt-4" -->
+                <div >
+                    <img src="img/caixinha.jpg" class="rounded float-start">
+                    <div class=" d-flex justify-content-center mt-4">
+                        <button type="submit" class="btn btn-success mx-2"> Concluir </button>
+                        <button type="reset" class="btn btn-outline-danger mx-2"> Limpar </button>
+                        <!-- <img src="img/cupcute.jpg" class="rounded float-end" style="display: block;"> -->
+
+                    </div>
+                </div>
+            </form>
         </div>
         <h1 class="mt-2">Deixe a sua marca</h1>
         <h5 style="margin: 0" class="fw-bolder">
