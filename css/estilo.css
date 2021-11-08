@@ -1,5 +1,6 @@
-html {
-  scroll-behavior: smooth;
+* {
+  font-family: 'Raleway', sans-serif;
+  color: #2e110a;
 }
 .imgCardHover {
   width: 100%;
@@ -64,6 +65,7 @@ html {
   bottom: 0;
   transition: all 0.5s;
   background-color: blueviolet;
+  /* background-image: url(../img/logog.svg); */
   border-radius: 140px 0 0 0;
   padding: 5px;
   text-decoration: underline;

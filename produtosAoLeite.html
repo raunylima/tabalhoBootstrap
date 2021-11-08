@@ -10,7 +10,17 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/produtos.js" defer></script>
 
 
   <title>Cacau Code</title>
@@ -65,7 +75,7 @@
               <a href="#" class="nav-link">Idealizadores</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contate-nos</a>
+              <a href="carrinho.html" class="nav-link">Contate-nos</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Valor Energético</a>
@@ -118,11 +128,7 @@
         </button>
       </div>
 
-      <!-- <div class="imgPromocao"></div>
-      <div class="pp">
-        <h2>Aproveite</h2>
-        <p>10% em toda a linha Ao Leite</p>
-      </div> -->
+      
     </section>
 
     <section class="container my-3">
@@ -166,7 +172,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$5.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(0)">Eu Quero</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -226,7 +235,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$3.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(1)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -280,7 +292,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$8.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(2)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -335,7 +350,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$20.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(3)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -398,7 +416,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$6.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(4)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -452,7 +473,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$3.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(5)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -504,7 +528,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$3.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(6)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -556,14 +583,17 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$2.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(7)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- clouna4 -->
+          <!-- coluna4 -->
           <div class="card" data-bs-toggle="modal" data-bs-target="#chocModal8">
             <img class="imgCardHover" src="img/branco5.jpg" />
           </div>
@@ -600,7 +630,7 @@
                     </div>
                     <div class="col-lg-3 col-md-12">
                       <p class="pModal">Trufa Belga Fran</p>
-                      <p class="pModal">Trufas belgas cremosa de chocolate intenso com pedaços de framboesa</p>
+                      <p class="pModal">Trufas belgas cremosas de chocolate intenso com pedaços de framboesa</p>
                       <table class="table">
                         <thead>
                           <tr>
@@ -617,7 +647,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$4.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(8)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -669,7 +702,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$2.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(9)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -703,7 +739,7 @@
                       <img class="imgModal" src="img/branco3.jpg" />
                     </div>
                     <div class="col-lg-3 col-md-12">
-                      <p class="pModal">Trufa </p>Gianduia
+                      <p class="pModal">Trufa Gianduia</p>
                       <p class="pModal">Trufas belgas com gianduia e pedaços avelãs</p>
                       <table class="table">
                         <thead>
@@ -721,7 +757,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$4.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(10)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -773,7 +812,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$4.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(0)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -834,7 +876,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$8.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(12)">Eu Quero</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -892,7 +937,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$6.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(13)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -950,7 +998,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$3.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(14)">Eu Quero</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1009,7 +1060,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$15.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(15)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -1077,7 +1131,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$5.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(16)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -1136,7 +1193,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$3.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(17)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -1194,7 +1254,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$6.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(18)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -1252,7 +1315,10 @@
                           </tr>
                         </tbody>
                       </table>
-                      <button class="btn btn-primary" type="submit">Eu Quero</button>
+                      <div class="text-center">
+                        <h5>Preço: R$6.00</h5>
+                        <button class="btn btn-primary" onclick="addItem(19)">Eu Quero</button>
+                    </div>
                     </div>
                   </div>
                 </div>
