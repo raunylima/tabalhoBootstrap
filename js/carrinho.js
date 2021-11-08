@@ -10,6 +10,7 @@ function calculaTotal(){
     // console.log(quantidades)
 
     let i=0
+    // iterando no array dos produtos para pegar a quantidade de cada um
     quantidades.forEach(element => {
         arrayProdutos[i].qntd = parseInt(element.value)
         valor += parseInt(element.value) * arrayProdutos[i].preco
@@ -25,6 +26,7 @@ function deletaItem(id){
     // console.log("entrei pra deletar")
     let arrayProdutos = JSON.parse(localStorage.getItem("carrinho"));
 
+    // percorrendo o array de produtos para excluir aquele que casa o id
     for(let i=0; i<arrayProdutos.length; i++){
         if(arrayProdutos[i].id == id){
             // temos que excluir
@@ -35,11 +37,13 @@ function deletaItem(id){
     document.location.reload(true)
 }
 
+// vai criar o html com os itens dentro dos carrinhos
 function exibeCarrinho(){
     let listaCarrinho = document.getElementById("listaCarrinho");
     let arrayProdutos= JSON.parse(localStorage.getItem("carrinho"));
     
-
+    // é o item que se refere ao total acumulado, coloca ele por fora para que ele
+    // fique por último
     let total = `
             <li class="list-group-item my-2 py-3">
                 <div class="text-end fw-bold">
@@ -49,6 +53,7 @@ function exibeCarrinho(){
                 </div><!-- text-end-->
             </li><!-- item2 (o subtotal)-->
     `
+    // percorrendo o array de produtos para criar um item na lista para cada um deles
     for(let i=0; i<arrayProdutos.length; i++){
         listaCarrinho.innerHTML += `
             <li class="list-group-item my-2 py-3">
@@ -79,7 +84,6 @@ function exibeCarrinho(){
     `
     }
 
-    
     // colocar o total embaixo
     listaCarrinho.innerHTML += total
     calculaTotal();
