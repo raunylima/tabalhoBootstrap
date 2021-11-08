@@ -8,3 +8,9 @@ Projeto desenvolvido em conjunto, utilizando Bootstrap
 
 Uma Edtech brasileira, a [_SoulCode Academy_](https:://soulcodeacademy.org/)(Link externo) é uma escola de inclusão digital, de metodologia ágil, com a missão de gerar impacto social,
 através da capacitação tecnológica, com foco em diversidade, equidade e empregabilidade.
+
+## Trabalho Chocoder
+**Grupo G4**
+
+![Print](https://github.com/alexsandre-sales/tabalhoBootstrap/blob/main/img/home.png)
+
