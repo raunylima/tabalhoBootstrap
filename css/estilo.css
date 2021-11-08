@@ -21,7 +21,7 @@ html {
   text-align: center;
   margin-bottom: 60px;
 }
-.imgPromocao {
+/* .imgPromocao {
   width: 100%;
   max-width: 1600px;
   height: 300px;
@@ -30,7 +30,7 @@ html {
   background-size: cover;
   background-position: center left;
   filter: brightness(50%);
-}
+} */
 .pp {
   width: 70%;
   height: 250px;
