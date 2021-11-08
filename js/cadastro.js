@@ -13,7 +13,7 @@ function limpaFormCep() {
     $("ptRef").val("");
 }//limpa form
 
-// executa quando o campo do cep perde o foco
+// executa quando o campo do cep perde o foco, vai trazer a chamada à api do viacep
 $("#cep").blur(function () {
     // validação cep
     let cep = $("#cep")
@@ -22,7 +22,7 @@ $("#cep").blur(function () {
     // consultando a api
     $.getJSON("https://viacep.com.br/ws/" + cepVal + "/json/?callback=?", function (dados) {
         if (!("erro" in dados)) {
-            //Atualiza os campos com os valores da consulta.
+            //Atualiza os campos com os valores resultantes da consulta.
             $("#logradouro").val(dados.logradouro);
             $("#bairro").val(dados.bairro);
             $("#complemento").val(dados.complemento);
@@ -37,23 +37,43 @@ $("#cep").blur(function () {
     })//getJson
 }) //blur
 
-
+// função para mostrar o modal com uma mensagem customizada
 function mostrarModal(textoErro){
     let modal = $("#modalAlerta")
     $("#textoModal").text(textoErro)
     new bootstrap.Modal(modal).show()
 }
 
+let contrato = `Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Suco de cevadiss deixa as pessoas mais interessantis. Copo furadis é disculpa de bebadis, arcu quam euismod magna.\n
+
+Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Diuretics paradis num copo é motivis de denguis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.\n
+
+Per aumento de cachacis, eu reclamis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Cevadis im ampola pa arma uma pindureta.\n
+
+Interagi no mé, cursus quis, vehicula ac nisi. Aenean aliquam molestie leo, vitae iaculis nisl. Si num tem leite então bota uma pinga aí cumpadi! Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!"`
+
+// função para mostrar o modal referente ao contrato
+$("#contrato").click(() => {
+    console.log("oi")
+    let modal = $("#modalAlerta");
+    $("#textoModal").text(contrato)
+    $("#staticBackdropLabel").text("Contrato e termos do cliente")
+    new bootstrap.Modal(modal).show()
+})
+
+// modal para mostrar o contato
 function modalContrato(){
-    let modal = $("#termosContrato");
+    let modal = $("#modalContrato");
     new bootstrap.Modal(modal).show()
 }
 
+// modal para mostrar um modal de sucesso
 function modalSucesso(){
     let modal = $("#modalSucesso")
     new bootstrap.Modal(modal).show()
 }
 
+// função para validar os numeros do cpf
 function validaCpf(cpf) {
     let valor = cpf.replaceAll('.', "")
     valor = valor.replace("-", "")
@@ -62,11 +82,13 @@ function validaCpf(cpf) {
     if(valor.length < 11){
         return false;
     }
+    // valores invalidos já conhecidos, porém que passam a validação normal, logo tem que escapar eles
     if (["00000000000", "11111111111", "22222222222", "33333333333",
         "44444444444", "55555555555", "66666666666", "77777777777", "88888888888", "99999999999"].includes(valor)) {
         return false;
     }
 
+    // cada valor * sua pos invertida
     let v1 = 0
     for (let i = 0; i < 9; i++) {
         v1 += parseInt(valor[i]) * (10 - i);
@@ -76,7 +98,7 @@ function validaCpf(cpf) {
     if ((v1 * 10) % 11 == 10) {
         v1 = 0;
     }
-
+    // cada valor * sua pos invertida (inclui o 1º dig de verficação)
     let v2 = 0
     for (let i = 0; i < 10; i++) {
         v2 += parseInt(valor[i]) * (11 - i);
@@ -96,13 +118,14 @@ function validaCpf(cpf) {
         return false;
     }
 
+    // passou por tudo, logo tá OK
     return true;
 } //valida cpf
 
 
-
+// faz a validação dos campos do formulário
 function enviarDados() {
-    // // validação nome
+    // validação nome, o tamanho tem que ser no min3
     let nome = $("#nome").val()
     if(nome.length < 3){
         $("#nome").focus()
@@ -151,6 +174,7 @@ function enviarDados() {
     let email1 = $("#email")
     let email2 = $("#email2")
 
+    // vendo se os emails estão vazios
     if(email1.val() == "" || email2.val() == ""){
         mostrarModal("Os emails digitados não estão corretos")
         $(email1).focus()
@@ -184,7 +208,7 @@ function enviarDados() {
     $(tel).removeClass("border-danger").addClass("border-success")
     // validação telefone
 
-    //validação das senhas
+    //validação das senhas, vendo se são iguais ou vazias
     let senha1 = $("#senha")
     let senha2 = $("#senha2")
     // vendo se as senhas batem
@@ -200,7 +224,7 @@ function enviarDados() {
     $(senha2).removeClass("border-danger").addClass("border-success")
     // validação das senhas
 
-    // validação cep
+    // validação cep, vendo se tem o valor minimo
     let cep = $("#cep")
     let cepVal = cep.val().replace("-", "")
     if(cepVal.length != 8){
@@ -211,7 +235,7 @@ function enviarDados() {
     }
     $(cep).removeClass("border-danger").addClass("border-success")
 
-    // validação do checkbox
+    // validação do checkbox, tem que estar selecionado para que seja enviado
     let ck = $("#termosContrato");
     if(ck[0].checked == false){
         mostrarModal("Você deve estar de acordo com os termos de serviço para continuar")
