@@ -26,10 +26,11 @@ produtos = [
     {id:17, nome:"Trufa Cacau", desc:"Trufa Cacau 100%", foto:"img/granola.jpg", preco:3, qntd:1},
     {id:18, nome:"Trufa de Tâmaras", desc:"Trufas com tâmaras, amêndoas e macadâmias com toque de canela e baunilha.", foto:"img/tamaras.jpg", preco:6, qntd:1},
     {id:19, nome:"Trufa de Matcha", desc:"Trufa de Matcha com massa de cacau, tâmaras, uva passa, amêndoas e castanha do pará.", foto:"img/chocoMatcha.jpg", preco:6, qntd:1},
-]
+]//produtos
 
-// conterá os itens colocados no carrinho de compra
-var arrayCarrinho = []
+
+// var arrayCarrinho = []
+var arrayCarrinho = JSON.parse(localStorage.getItem("carrinho"));
 
 // poe o item dentro do arraycarrinho
 function poeCarrinho(item){

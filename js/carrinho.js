@@ -1,4 +1,6 @@
 // add comportamento ao botao de lixeira
+let arrayProdutos = JSON.parse(localStorage.getItem("carrinho"));
+console.log(arrayProdutos);
 
 // calcula o somatorio do valor de todos os produtos no carrinho
 function calculaTotal(){
