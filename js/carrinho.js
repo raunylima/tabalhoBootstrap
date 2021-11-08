@@ -9,9 +9,12 @@ function calculaTotal(){
 
     let i=0
     quantidades.forEach(element => {
+        arrayProdutos[i].qntd = parseInt(element.value)
         valor += parseInt(element.value) * arrayProdutos[i].preco
         i++
     });
+
+    localStorage.setItem("carrinho", JSON.stringify(arrayProdutos));
     $("#valorTotal").text("Valor Total: R$"+ valor +",00")
 }
 
@@ -59,7 +62,7 @@ function exibeCarrinho(){
                     
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="input-group mt-5">
-                            <input type="number" class="form-control" value=1 onblur="calculaTotal()">
+                            <input type="number" class="form-control" value=${arrayProdutos[i].qntd} onblur="calculaTotal()">
                             <button type="button" class="btn btn-outline-danger" onclick="deletaItem(${arrayProdutos[i].id})">
                                 <i class="bi bi-trash"></i>
                             </button>
