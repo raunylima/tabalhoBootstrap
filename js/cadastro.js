@@ -1,3 +1,7 @@
+function teste(){
+    console.log("oi")
+}
+
 // função para setar os dados relacionados ao cep para nada
 function limpaFormCep() {
     $("#uf").val("");
@@ -37,6 +41,11 @@ $("#cep").blur(function () {
 function mostrarModal(textoErro){
     let modal = $("#modalAlerta")
     $("#textoModal").text(textoErro)
+    new bootstrap.Modal(modal).show()
+}
+
+function modalContrato(){
+    let modal = $("#termosContrato");
     new bootstrap.Modal(modal).show()
 }
 
