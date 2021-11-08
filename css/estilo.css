@@ -1,5 +1,6 @@
-html {
-  scroll-behavior: smooth;
+* {
+  font-family: 'Raleway', sans-serif;
+  color: #2e110a;
 }
 .imgCardHover {
   width: 100%;
