@@ -1,0 +1,144 @@
+/* hr{
+    margin-top: 8px;
+    margin-bottom: 0px;
+} */
+
+
+h1{
+    font-family: 'Berkshire Swash', cursive;
+}
+
+h5, h6{
+    font-family: 'Raleway', sans-serif;
+}
+
+input{
+    text-indent: 12px;
+}
+
+@media(min-height: 737px){
+    .ftf{
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+    }
+
+}
+
+/* ************************************************************************************ */
+/*  ************************************* Icones ************************************** */
+/* ************************************************************************************ */
+#dtNascimento{
+    /* background-color: red; */
+    text-indent: 6px;
+}
+
+.person{
+    background-image: url("../img/icons/person-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.fingerprint{
+    background-image: url("../img/icons/fingerprint.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.calendar{
+    background-image: url("../img/icons/calendar2-week-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.gender{
+    background-image: url("../img/icons/gender-ambiguous.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.mail{
+    background-image: url("../img/icons/envelope-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.telefone{
+    background-image: url("../img/icons/telephone-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.key{
+    background-image: url("../img/icons/key-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.cep{
+    background-image: url("../img/icons/geo-alt-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.lugar{
+    background-image: url("../img/icons/geo-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.house{
+    background-image: url("../img/icons/house-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.ref{
+    background-image: url("../img/icons/signpost-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.build{
+    background-image: url("../img/icons/building.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.numero{
+    background-image: url("../img/icons/123.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.complemento{
+    background-image: url("../img/icons/plus-circle-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.bairro{
+    background-image: url("../img/icons/signpost-split.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.texty{
+    background-image: url("../img/icons/body-text.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+.recipe{
+    background-image: url("../img/icons/receipt.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+}
+
+/* ************************************************************************************ */
+/*  ************************************* Divisórias ********************************** */
+/* ************************************************************************************ */
+.divisoria{
+    margin: 0;
+    width: 100%;
+}
