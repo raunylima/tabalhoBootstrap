@@ -3,41 +3,45 @@
     padding: 0;
     font-size: 10px;
     align-items: center;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
+    color: #2E110A;
 }
 
 .container-fluid, .container {
     padding: 0;
 }
 
-h2 {
+.hDois {
     font-size: 4.75rem;
 }
 
-h3 {
+.hTres, .hTres strong {
     font-size: 3.5rem;
 }
 
-p, p strong {
+.fontsT, .fontsT tr th, .fontsT tr td, .fontsT i {
     font-size: 2.75rem;
 }
 
-th, td {
+.fontsT tr td p strong, .fontsT strong {
     font-size: 2.5rem;
-}
-
-.card {
-    border: none;
 }
 
 .tBotao {
     width: 25rem;
+    background-color: #2E110A;
+    color: white;
+}
+
+.tBotao .fontsT {
+    color: white;
 }
 
 .cxG {
     margin: 10rem 0 20rem 0;
 }
 
+<<<<<<< Updated upstream
 section .card #fotinhas {
     align-self: center;
     background-image: url("img/perfil.jpeg");
@@ -51,32 +55,55 @@ section .card #fotinhas {
 
 @media (max-width: 1024px) {
     h2 {
-        font-size: 2.75rem;
+=======
+
+@media (max-width: 1400px) {
+    .hDois {
+        font-size: 3.5rem;
     }
-    h3 {
+    .hTres, .hTres strong {
+        font-size: 3rem;
+    }
+    .fontsT, .fontsT tr th, .fontsT tr td, .fontsT i {
+        font-size: 2.5rem;
+    }
+    .fontsT tr td p strong, .fontsT strong {
         font-size: 2.25rem;
     }
-    p, p strong {
+}
+
+@media (max-width: 1200px) {
+    .hDois {
+        font-size: 3.25rem;
+    }
+    .hTres, .hTres strong {
+>>>>>>> Stashed changes
+        font-size: 2.75rem;
+    }
+    .fontsT, .fontsT tr th, .fontsT tr td, .fontsT i {
+        font-size: 2.25rem;
+    }
+    .fontsT tr td p strong, .fontsT strong {
         font-size: 2rem;
     }
-    th, td {
+}
+
+@media (max-width: 1024px) {
+    .hDois {
+        font-size: 2.75rem;
+    }
+    .hTres, .hTres strong {
+        font-size: 2.25rem;
+    }
+    .fontsT, .fontsT tr th, .fontsT tr td, .fontsT i  {
+        font-size: 2rem;
+    }
+    .fontsT tr td p strong, .fontsT strong {
         font-size: 1.75rem;
-    } 
+    }
 }
 
 @media (max-width: 600px) {
-    h2 {
-        font-size: 2.75rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-    p, p strong {
-        font-size: 1.4rem;
-    }
-    th, td {
-        font-size: 1.4rem;
-    }
     .row {
         margin: 0 var(--bs-gutter-x);
         padding: 0 var(--bs-gutter-x);
