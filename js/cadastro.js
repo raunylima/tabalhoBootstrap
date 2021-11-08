@@ -44,8 +44,24 @@ function mostrarModal(textoErro){
     new bootstrap.Modal(modal).show()
 }
 
+let contrato = `Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Suco de cevadiss deixa as pessoas mais interessantis. Copo furadis é disculpa de bebadis, arcu quam euismod magna.\n
+
+Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Diuretics paradis num copo é motivis de denguis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.\n
+
+Per aumento de cachacis, eu reclamis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Cevadis im ampola pa arma uma pindureta.\n
+
+Interagi no mé, cursus quis, vehicula ac nisi. Aenean aliquam molestie leo, vitae iaculis nisl. Si num tem leite então bota uma pinga aí cumpadi! Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!"`
+
+$("#contrato").click(() => {
+    console.log("oi")
+    let modal = $("#modalAlerta");
+    $("#textoModal").text(contrato)
+    $("#staticBackdropLabel").text("Contrato e termos do cliente")
+    new bootstrap.Modal(modal).show()
+})
+
 function modalContrato(){
-    let modal = $("#termosContrato");
+    let modal = $("#modalContrato");
     new bootstrap.Modal(modal).show()
 }
 
