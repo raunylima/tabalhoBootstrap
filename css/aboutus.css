@@ -95,6 +95,12 @@ main {
     }
 }
 
+@media (max-width: 992px) {
+    .passador{
+        align-items: start;
+    }
+}
+
 @media (max-width: 600px) {
     .row {
         margin: 0 var(--bs-gutter-x);
